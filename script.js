@@ -19,7 +19,7 @@ var potentialCharacters = '';
 function generatePassword(){
   // Prompt user for criteria
   var passLength = prompt('How many characters would you want in the pass?');
-  console.log(passLength);
+  // console.log(passLength);
 
 
   // Make sure the pass is more than 8 characters and less that 128
@@ -34,10 +34,10 @@ function generatePassword(){
   if (userWantsUpper === true) {
     // Add uppercase letters to the password
     potentialCharacters += upperCase;
-    console.log(potentialCharacters);
+    // console.log(potentialCharacters);
   } else {
   // Do not add uppercase letters to the password
-    console.log('The user does not want upper case letters');
+    // console.log('The user does not want upper case letters');
   };
   
   
@@ -46,10 +46,10 @@ function generatePassword(){
   if (userWantsLower === true) {
     // Add lowercase letters to the password
     potentialCharacters += lowerCase;
-    console.log(potentialCharacters);
+    // console.log(potentialCharacters);
   } else {
     // Do not add lowercase letters to the password
-    console.log('The user does not want lower case letters')
+    // console.log('The user does not want lower case letters')
   };
 
   
@@ -58,10 +58,10 @@ function generatePassword(){
   if (userWantsNumbers === true) {
     // Add numbers to the password
     potentialCharacters += numbers;
-    console.log(potentialCharacters);
+    // console.log(potentialCharacters);
   } else {
     // Do not add numbers to the password
-    console.log('The user does not want numbers')
+    // console.log('The user does not want numbers')
   };
   
   
@@ -70,15 +70,15 @@ function generatePassword(){
   if (userWantsSpecial === true) {
     // Add special characters to the password
     potentialCharacters += special;
-    console.log(potentialCharacters);
+    // console.log(potentialCharacters);
   } else {
     // Do not add special characters to the password
-    console.log('The user does not want special characters')
+    // console.log('The user does not want special characters')
   }; 
 
 
 // This for loop was inspired from this post off of stackoverflow
-// https://stackoverflow.com/questions/948172/password-strength-meter
+// https://stackoverflow.com/questions/1497481/javascript-password-generator
   for (var i = 0, n = potentialCharacters.length; i < passLength; i++) {
   // Get random value from potentialCharacters
   // Add randomValue to passwordValue
